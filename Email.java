@@ -18,19 +18,15 @@ public class Email {
 	{
 		this.firstName = firstName;
 		this.lastName = lastName;
-//		System.out.println("EMAIL CREATED: " + this.firstName + " " + this.lastName);
 		
 		//Call a method asking for the department
 		this.department = setDepartment();
-//		System.out.println("Department: " + department);
 		
 		//Combine elements to generate email
 		email = firstName.toLowerCase()+ "." + lastName.toLowerCase() + "@" + department + companySuffix;
-//		System.out.println("Your email is: " + email);
 		
 		//Call a method asking for password
 		this.password = randomPassword(defaultPasswordLength);
-//		System.out.println("Your password is: " + password);
 	}
 	
 	//Ask for department
